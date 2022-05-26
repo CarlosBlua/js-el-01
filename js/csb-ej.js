@@ -58,29 +58,41 @@
 // ##############################################################
 // Algoritmo para determinar si un numero es o no primo
 
-function detectPrimo (){
-    const number = parseInt(prompt("Introduzca un numero natural"));
-    let esPrimo = true;
-    if (number === 1){
-        console.log("1 no es un numero primo ni compuesto");
-    }else if(number > 1){
-        for (let i = 2; i < number; i++){
-            if (number % i == 0){
-                esPrimo = false;
-                break;
-            }
-        }
-        if (esPrimo){
-            console.log(number + " es un numero primo.");
-        }else{
-            console.log(number + " no es un numero primo.");
-        }
-    }else{
-        console.log(number + " no es un numero primo");
-    }
-}
-detectPrimo();
+// function detectPrimo (){
+//     const number = parseInt(prompt("Introduzca un numero natural"));
+//     let esPrimo = true;
+//     if (number === 1){
+//         console.log("1 no es un numero primo ni compuesto");
+//     }else if(number > 1){
+//         for (let i = 2; i < number; i++){
+//             if (number % i == 0){
+//                 esPrimo = false;
+//                 break;
+//             }
+//         }
+//         if (esPrimo){
+//             console.log(number + " es un numero primo.");
+//         }else{
+//             console.log(number + " no es un numero primo.");
+//         }
+//     }else{
+//         console.log(number + " no es un numero primo");
+//     }
+// }
+// detectPrimo();
 
 
 // ##############################################################
-// Algoritmo para determinar si un numero es o no primo
+// Pruebas hechas con JavaScript orientado a objetos
+
+
+
+const user = {
+    name: "carlos", //propiedad o par clave valor
+    lastname: "perez",
+    age: "10",
+
+};
+
+console.log( typeof user );
+console.log(user);
